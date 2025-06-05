@@ -1,0 +1,111 @@
+@use "../abstracts/" as *;
+
+/* Form container */
+.wpcf7 {
+  width: 100%;
+  border-radius: 0.8rem;
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  &-form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1.4px solid $color-primary-black;
+    border-radius: 4px;
+    font-family: inherit;
+
+    &:not(:last-child) {
+      width: unset;
+    }
+
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  /* Text inputs and textareas */
+  &-text,
+  &-textarea,
+  &-select {
+    background: $color-primary-white;
+    transition: all 0.3s;
+    font-size: 1.6rem;
+
+    &:hover {
+      background: $color-zinc-100;
+    }
+
+    &:focus {
+      box-shadow: 0 0 1rem rgba($color-primary-black, 0.2);
+      outline: none;
+      background: $color-zinc-100;
+    }
+  }
+
+  /* Textarea specific */
+  &-textarea {
+    height: 14rem;
+  }
+
+  /* Submit button */
+  &-submit {
+    background: $color-primary-black;
+    color: white;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: $color-primary-white;
+      color: $color-primary-black;
+      outline: 1px solid $color-primary-black;
+    }
+  }
+
+  /* Validation and errors */
+  &-not-valid-tip {
+    color: $color-error;
+    font-size: 1.6rem;
+  }
+
+  &-response-output {
+    padding: 1rem;
+    margin: 0;
+    margin: unset !important;
+    border-radius: 4px;
+  }
+
+  & form.invalid &-response-output {
+    border-color: $color-error;
+  }
+
+  & form.sent &-response-output {
+    border-color: $color-primary-black;
+  }
+
+  &-mail-sent-ok {
+    border: 2px solid $color-primary-black;
+    background: $color-primary-white;
+  }
+
+  &-validation-errors {
+    border: 2px solid $color-error;
+    background: $color-primary-white;
+  }
+
+  &-mail-sent-ng {
+    border: 2px solid $color-error;
+    background: $color-primary-white;
+  }
+
+  &-spinner {
+    display: block;
+  }
+}

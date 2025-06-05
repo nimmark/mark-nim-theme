@@ -1,0 +1,46 @@
+@use "../abstracts/" as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(laptop) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tablet-md) {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(8, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14.25rem) [col-end]) [center-end] minmax(
+      6rem,
+      1fr
+    )
+    [full-end];
+
+  @include respond(tablet-md) {
+    grid-template-rows: repeat(8, min-content);
+    grid-template-columns:
+      [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(
+        2rem,
+        1fr
+      )
+      [full-end];
+  }
+}

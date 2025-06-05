@@ -1,0 +1,36 @@
+@use "../abstracts/" as *;
+.social-icon {
+  height: 2rem;
+  width: 2rem;
+  margin-top: 3rem;
+  padding: 1rem;
+  border: 2px solid $color-primary-black;
+  border-radius: 4px;
+  box-sizing: content-box;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: black;
+    fill: $color-primary-white;
+  }
+}
+
+//section skill icon
+
+.title-icon {
+  fill: $color-primary-white;
+  max-height: 3rem;
+  max-width: 3rem;
+  margin-right: 2.5rem;
+
+  @include respond(mobile-pt) {
+    margin-right: 2rem;
+  }
+}
+
+//project icon
+.icon__new-tab {
+  fill: $color-primary-white;
+  max-height: 2rem;
+  max-width: 2rem;
+}

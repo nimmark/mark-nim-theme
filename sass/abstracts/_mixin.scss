@@ -1,0 +1,27 @@
+@mixin respond($breakpoints) {
+  @if $breakpoints == laptop {
+    /* Medium desktops and laptops (between 992px and 1199px) */
+    @media only screen and (max-width: 74.9375em) {
+      @content;
+    }
+  } @else if $breakpoints == tablet-md {
+    /* Tablets and smaller laptops (between 768px and 991px) */
+    @media only screen and (max-width: 61.9375em) {
+      @content;
+    }
+  } @else if $breakpoints == mobile-lc {
+    /* Mobile landscape (between 576px and 767px) */
+    @media only screen and (max-width: 47.9375em) {
+      @content;
+    }
+  } @else if $breakpoints == mobile-pt {
+    /* Mobile portrait (up to 575px) */
+    @media only screen and (min-width: 23.4375em) and (max-width: 35.9375em) {
+      @content;
+    }
+  } @else if $breakpoints == mobile-sm {
+    @media only screen and (max-width: 23.375em) {
+      @content;
+    }
+  }
+}

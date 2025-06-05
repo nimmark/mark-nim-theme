@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+.site-footer {
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: subgrid;
+  background-color: $color-primary-black;
+
+  &__container {
+    grid-column: center-start / center-end;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond(mobile-sm) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}

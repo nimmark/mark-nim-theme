@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+%site-logo__url {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-logo {
+  z-index: 100;
+  font-size: 3rem;
+
+  &__url--black {
+    @extend %site-logo__url;
+    color: $color-primary-black;
+  }
+
+  &__url--white {
+    @extend %site-logo__url;
+    color: $color-primary-white;
+  }
+}

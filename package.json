@@ -1,0 +1,21 @@
+{
+  "name": "mark-nim-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "dev": "wp-scripts start",
+    "devFast": "wp-scripts start",
+    "test": "wp-scripts test-unit"
+  },
+  "author": "Mark",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.14.1"
+  },
+  "dependencies": {
+    "axios": "^1.8.4"
+  }
+}
