@@ -9,7 +9,7 @@
             <h1 class="display-text">Base in <span class="text-xbold">Philippines.</span></h1>
         </div>
 
-        <p class="paragraph--2">I'm Mark G. Nim Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
+        <p class="paragraph--2">Hi, I'm Mark Nim, a 27-years-old WordPress developer based in the Philippines. I specialize in building custom WordPress themes with a strong focus on clean code, responsive design, and user-friendly interfaces..</p>
 
         <div class="section-hero__icon-box">
             <svg class="social-icon">
@@ -135,14 +135,14 @@
         <h1 class="display-text margin-bottom-md">About <span class="text-xbold">Me</span></h1>
         <div class="section-about__content paragraph--2 ">
             <p>
-                I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
+                Hi, I'm Mark Nim, a WordPress developer based in the Philippines. I specialize in building custom WordPress themes with a strong focus on clean code, responsive design, and user-friendly interfaces.
             </p>
             <p>
-                I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.
+                With 1 year and 6 months of hands-on experience, I’ve worked on various WordPress projects, from e-commerce sites using WooCommerce, to dynamic websites powered by Elementor and Advanced Custom Fields (ACF). My skill set includes HTML, CSS, SASS, JavaScript, and PHP, which I use to bring unique and functional designs to life.
             </p>
 
             <p>
-                When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.
+                Whether it's developing from scratch or enhancing existing websites, I’m passionate about crafting tailored solutions that align with each client's goals.
             </p>
         </div>
 
@@ -213,7 +213,7 @@
             for<br>Something special
         </h1>
 
-        <p class="paragraph--2">I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.</p>
+        <p class="paragraph--2">Have a project in mind or need help with your WordPress site? I’d love to hear from you! Feel free to reach out and I’ll get back to you as soon as possible.</p>
 
         <h3 class="heading-3 heading-3--sbold">
             <span class="section-form__email">nimmark98@gmail.com</span>
