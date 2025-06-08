@@ -17,7 +17,7 @@
                     <use xlink:href="<?= get_theme_file_uri('/images/icomoon-sprites.svg#icon-facebook') ?>"></use>
                 </svg>
             </a>
-            <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-homepage" class="icon-link">
+            <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-homepage" class="icon-link" target="_blank" rel="noopener">
                 <svg class="social-icon">
                     <use xlink:href="<?= get_theme_file_uri('/images/icomoon-sprites.svg#icon-indeed') ?>"></use>
                 </svg>
