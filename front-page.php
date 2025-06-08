@@ -9,7 +9,7 @@
             <h1 class="display-text">Base in <span class="text-xbold">Philippines.</span></h1>
         </div>
 
-        <p class="paragraph--2">Hi, I'm Mark Nim, a 27-years-old WordPress developer based in the Philippines. I specialize in building custom WordPress themes with a strong focus on clean code, responsive design, and user-friendly interfaces.</p>
+        <p class="paragraph--2">I specialize in building custom WordPress themes with a strong focus on clean code, responsive design, and user-friendly interfaces.</p>
 
         <div class="section-hero__icon-box">
             <a href="https://www.facebook.com/mark.nim.5/" class="icon-link" target="_blank" rel="noopener">
