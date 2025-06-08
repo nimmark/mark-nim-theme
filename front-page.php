@@ -9,18 +9,26 @@
             <h1 class="display-text">Base in <span class="text-xbold">Philippines.</span></h1>
         </div>
 
-        <p class="paragraph--2">Hi, I'm Mark Nim, a 27-years-old WordPress developer based in the Philippines. I specialize in building custom WordPress themes with a strong focus on clean code, responsive design, and user-friendly interfaces..</p>
+        <p class="paragraph--2">Hi, I'm Mark Nim, a 27-years-old WordPress developer based in the Philippines. I specialize in building custom WordPress themes with a strong focus on clean code, responsive design, and user-friendly interfaces.</p>
 
         <div class="section-hero__icon-box">
-            <svg class="social-icon">
-                <use xlink:href="<?= get_theme_file_uri('/images/icomoon-sprites.svg#icon-facebook') ?>"></use>
-            </svg>
-            <svg class="social-icon">
-                <use xlink:href="<?= get_theme_file_uri('/images/icomoon-sprites.svg#icon-indeed') ?>"></use>
-            </svg>
-            <svg class="social-icon">
-                <use xlink:href="<?= get_theme_file_uri('/images/icomoon-sprites.svg#icon-linkedin') ?>"></use>
-            </svg>
+            <a href="https://www.facebook.com/mark.nim.5/" class="icon-link" target="_blank" rel="noopener">
+                <svg class="social-icon">
+                    <use xlink:href="<?= get_theme_file_uri('/images/icomoon-sprites.svg#icon-facebook') ?>"></use>
+                </svg>
+            </a>
+            <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-homepage" class="icon-link">
+                <svg class="social-icon">
+                    <use xlink:href="<?= get_theme_file_uri('/images/icomoon-sprites.svg#icon-indeed') ?>"></use>
+                </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/mark-nim-969048348/" class="icon-link" target="_blank" rel="noopener">
+                <svg class="social-icon">
+                    <use xlink:href="<?= get_theme_file_uri('/images/icomoon-sprites.svg#icon-linkedin') ?>"></use>
+                </svg>
+            </a>
+
         </div>
 
     </div>
