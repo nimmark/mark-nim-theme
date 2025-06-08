@@ -101,7 +101,7 @@
         ?>
             <div class="section-exp__content-box--item">
                 <div class="section-exp__title-box">
-                    <div class="wrapper">
+                    <div class="section-exp__title-wrapper">
                         <svg class="title-icon">
                             <use xlink:href="<?= get_theme_file_uri('/images/icomoon-sprites.svg#icon-briefcase') ?>"></use>
                         </svg>

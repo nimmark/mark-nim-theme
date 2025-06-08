@@ -15,7 +15,7 @@
       @content;
     }
   } @else if $breakpoints == mobile-pt {
-    /* Mobile portrait (up to 575px) */
+    /* Mobile portrait (min 374px up to 575px) */
     @media only screen and (min-width: 23.4375em) and (max-width: 35.9375em) {
       @content;
     }
