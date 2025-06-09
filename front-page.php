@@ -123,7 +123,7 @@
 
                     </h6>
                 </div>
-                <div class="section-exp__desc-box paragraph--2 font-color__zinc-300">
+                <div class="section-exp__desc-box paragraph--2 font-color__zinc-300 text-justify">
                     <?= $workExpDesc; ?>
                 </div>
             </div>
