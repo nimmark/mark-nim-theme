@@ -11,7 +11,7 @@
 
     <header class="site-header">
         <div class="site-header__container">
-            <h5 class="heading-5 site-logo mr-auto"><a href="<?= site_url() ?>" class="site-logo__url--black">M.Nim</a></h5>
+            <h5 class="heading-5 site-logo mr-auto"><a href="<?= site_url() ?>" class="site-logo__url--black"><?= bloginfo('name') ?></a></h5>
             <div class="site-header__menu">
                 <nav class="site-header__main-nav">
                     <ul class="heading-5">
