@@ -166,7 +166,8 @@
         $homePageProject = new WP_Query(array(
             'post_per_page' => -1,
             'post_type' => 'project',
-            'orderby' => 'title',
+            'meta_key' => 'project_number',
+            'orderby' => 'meta_value_num',
             'order' => 'ASC'
         ));
 
