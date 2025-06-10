@@ -14,18 +14,18 @@
         <div class="section-hero__icon-box">
             <a href="https://www.facebook.com/mark.nim.5/" class="icon-link" target="_blank" rel="noopener">
                 <svg class="social-icon">
-                    <use xlink:href="<?= get_theme_file_uri('/images/icomoon-sprites.svg#icon-facebook') ?>"></use>
+                    <use xlink:href="#icon-facebook"></use>
                 </svg>
             </a>
             <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-homepage" class="icon-link" target="_blank" rel="noopener">
                 <svg class="social-icon">
-                    <use xlink:href="<?= get_theme_file_uri('/images/icomoon-sprites.svg#icon-indeed') ?>"></use>
+                    <use xlink:href="#icon-indeed"></use>
                 </svg>
             </a>
 
             <a href="https://www.linkedin.com/in/mark-nim-969048348/" class="icon-link" target="_blank" rel="noopener">
                 <svg class="social-icon">
-                    <use xlink:href="<?= get_theme_file_uri('/images/icomoon-sprites.svg#icon-linkedin') ?>"></use>
+                    <use xlink:href="#icon-linkedin"></use>
                 </svg>
             </a>
 
@@ -103,7 +103,7 @@
                 <div class="section-exp__title-box">
                     <div class="section-exp__title-wrapper">
                         <svg class="title-icon">
-                            <use xlink:href="<?= get_theme_file_uri('/images/icomoon-sprites.svg#icon-briefcase') ?>"></use>
+                            <use xlink:href="#icon-briefcase"></use>
                         </svg>
                         <h4 class="heading-4 mr-auto"><?= the_title() ?></h4>
                     </div>
@@ -190,13 +190,13 @@
                 <div class="section-projects__item--content text-white">
                     <h1 class="display-text text-xbold"><?= $projectNum ?></h1>
                     <h2 class="heading-2 text-bold"><?= the_title() ?></h2>
-                    <div class="paragraph--2 font-color__zinc-500">
+                    <div class="paragraph--2 font-color__zinc-500 text-justify">
                         <?= $projectDesc ?>
                     </div>
 
                     <a class="icon-link" href="<?= esc_url(get_field('project_url')) ?>" target="_blank" rel="noopener">
                         <svg class="icon__new-tab">
-                            <use xlink:href="<?= get_theme_file_uri('/images/icomoon-sprites.svg#icon-new-tab') ?>"></use>
+                            <use xlink:href="#icon-new-tab"></use>
                         </svg>
                     </a>
                 </div>

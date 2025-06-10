@@ -9,6 +9,13 @@
 
 </footer>
 
+<?php
+$svg_sprites = get_template_directory() . '/images/icomoon-sprites.svg';
+if (file_exists($svg_sprites)) {
+    echo file_get_contents($svg_sprites);
+}
+?>
+
 </body>
 
 </html>
