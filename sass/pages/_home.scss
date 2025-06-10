@@ -77,6 +77,10 @@
     @include respond(mobile-pt) {
       max-width: 100%;
     }
+
+    @include respond(mobile-sm) {
+      max-width: 100%;
+    }
   }
 }
 
@@ -173,6 +177,10 @@
     }
 
     @include respond(mobile-pt) {
+      width: 100%;
+    }
+
+    @include respond(mobile-sm) {
       width: 100%;
     }
   }
