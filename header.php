@@ -26,7 +26,7 @@
                 <button class="btn">
                     <a href="https://docs.google.com/document/d/1n0XJbhwJyRr1uRWsiXbd6dxIY40gWhw-IlTzHNRBrVI/edit?usp=sharing" class="site-header__btn btn__link btn-text" target="_blank" rel="noopener">Resume</a>
                     <svg class="btn-icon">
-                        <use xlink:href="<?= get_theme_file_uri('/images/icomoon-sprites.svg#icon-download') ?>"></use>
+                        <use xlink:href="#icon-download"></use>
                     </svg></a>
                 </button>
             </div>
