@@ -24,10 +24,10 @@
                     </ul>
                 </nav>
                 <button class="btn">
-                    <a href="https://docs.google.com/document/d/1n0XJbhwJyRr1uRWsiXbd6dxIY40gWhw-IlTzHNRBrVI/edit?usp=sharing" class="site-header__btn btn__link btn-text" target="_blank" rel="noopener">Resume</a>
-                    <svg class="btn-icon">
-                        <use xlink:href="#icon-download"></use>
-                    </svg></a>
+                    <a href="https://docs.google.com/document/d/1n0XJbhwJyRr1uRWsiXbd6dxIY40gWhw-IlTzHNRBrVI/edit?usp=sharing" class="site-header__btn btn__link btn-text" target="_blank" rel="noopener">Resume <svg class="btn-icon">
+                            <use xlink:href="#icon-download"></use>
+                        </svg>
+                    </a>
                 </button>
             </div>
             <i class="site-header__menu-trigger fa-solid fa-bars" aria-hidden="true"></i>
