@@ -9,7 +9,7 @@
             <h1 class="display-text">Base in <span class="text-xbold">Philippines.</span></h1>
         </div>
 
-        <p class="paragraph--2">I specialize in building custom WordPress themes with a strong focus on clean code, responsive design, and user-friendly interfaces.</p>
+        <p class="section-hero__about-txt paragraph--2">I specialize in building custom WordPress themes with a strong focus on clean code, responsive design, and user-friendly interfaces.</p>
 
         <div class="section-hero__icon-box">
             <a href="https://www.facebook.com/mark.nim.5/" class="icon-link" target="_blank" rel="noopener">
@@ -140,7 +140,7 @@
     </div>
 
     <div class="section-about__content-box">
-        <h1 class="display-text margin-bottom-md">About <span class="text-xbold">Me</span></h1>
+        <h1 class="section-about__headline display-text margin-bottom-md">About <span class="text-xbold">Me</span></h1>
         <div class="section-about__content paragraph--2 ">
             <p>
                 Hi, I'm Mark Nim, a WordPress developer based in the Philippines. I specialize in building custom WordPress themes with a strong focus on clean code, responsive design, and user-friendly interfaces.
