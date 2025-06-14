@@ -4,8 +4,11 @@ import "../sass/main.scss";
 import MobileMenu from "../src/modules/MobileMenu";
 import ScrollSpy from "../src/modules/ScrollSpy";
 import StickyHeader from "../src/modules/StickyHeader";
+import RevealAnimations from "../src/modules/RevealAnimations";
 
 // Instantiate a new object using our modules/classes
 const mobileMenu = new MobileMenu();
 const scrollSpy = new ScrollSpy();
 const stickyHeader = new StickyHeader();
+
+const scrollAnimations = new RevealAnimations();
