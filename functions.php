@@ -2,8 +2,9 @@
 
 function mark_theme_files()
 {
-    wp_enqueue_script('scroll-reavel', '//unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js', array(), null, true);
+    wp_enqueue_script('aos-js', '//unpkg.com/aos@next/dist/aos.js', null, true);
     wp_enqueue_script('main-mark-theme-js', get_theme_file_uri('/build/index.js'), array('jquery'), 1.0, true);
+    wp_enqueue_style('aos-css', '//unpkg.com/aos@next/dist/aos.css');
     wp_enqueue_style('icon', '//cdn.lineicons.com/5.0/lineicons.css');
     wp_enqueue_style('font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
     wp_enqueue_style('custom-google-font', '//fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');

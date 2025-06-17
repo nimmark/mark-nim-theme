@@ -14,7 +14,10 @@
     // min-height: 20rem;
     padding: 1rem;
     gap: 1.5rem;
-    transition: all 0.2s;
+    transition:
+      background-color 0.2s,
+      fill 0.2s,
+      color 0.2s;
 
     & svg,
     & path {
@@ -34,5 +37,41 @@
     &:hover h5 {
       color: $color-primary-white;
     }
+
+    // &:nth-child(2) {
+    //   transition-delay: 200ms;
+    // }
+
+    // &:nth-child(3) {
+    //   transition-delay: 400ms;
+    // }
+
+    // &:nth-child(4) {
+    //   transition-delay: 600ms;
+    // }
+
+    // &:nth-child(5) {
+    //   transition-delay: 800ms;
+    // }
+
+    // &:nth-child(6) {
+    //   transition-delay: 1000ms;
+    // }
+
+    // &:nth-child(7) {
+    //   transition-delay: 1200ms;
+    // }
+
+    // &:nth-child(8) {
+    //   transition-delay: 1400ms;
+    // }
+
+    // &:nth-child(9) {
+    //   transition-delay: 1600ms;
+    // }
+
+    // &:nth-child(10) {
+    //   transition-delay: 1800ms;
+    // }
   }
 }

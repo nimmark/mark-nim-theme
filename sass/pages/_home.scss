@@ -3,7 +3,9 @@
 .section-hero {
   grid-column: center-start / center-end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  place-items: center;
+  min-height: 85vh;
 
   @include respond(mobile-lc) {
     grid-template-columns: 1fr;
@@ -159,7 +161,7 @@
 .section-about {
   grid-column: center-start / center-end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   padding: 6rem 0;
 
   @include respond(mobile-lc) {
@@ -215,12 +217,9 @@
 
   &__content-box {
     grid-column: center-start / center-end;
-
-    @include respond(mobile-lc) {
-      display: flex;
-      flex-direction: column;
-      gap: 3rem;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
   }
 
   &__item {

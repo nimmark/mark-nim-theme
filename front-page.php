@@ -3,15 +3,15 @@
 
 <section id="home" class="section-hero">
     <div class="section-hero__content-box">
-        <div class="section-hero__text-box">
+        <div class="section-hero__text-box" data-aos="fade-right">
             <h1 class="display-text">Hello I'am <span class="text-xbold">Mark G. Nim</span></h1>
             <h1 class="display-text"><span class="text-xbold">Wordpress</span> <span class="display-text--outlined">Developer</span></h1>
             <h1 class="display-text">Base in <span class="text-xbold">Philippines.</span></h1>
         </div>
 
-        <p class="section-hero__about-txt paragraph--2">I specialize in building custom WordPress themes with a strong focus on clean code, responsive design, and user-friendly interfaces.</p>
+        <p class="section-hero__about-txt paragraph--2" data-aos="fade-right" data-aos-delay="200">I specialize in building custom WordPress themes with a strong focus on clean code, responsive design, and user-friendly interfaces.</p>
 
-        <div class="section-hero__icon-box">
+        <div class="section-hero__icon-box " data-aos="fade-right" data-aos-delay="300">
             <a href="https://www.facebook.com/mark.nim.5/" class="icon-link" target="_blank" rel="noopener">
                 <svg class="social-icon">
                     <use xlink:href="#icon-facebook"></use>
@@ -34,12 +34,13 @@
     </div>
 
     <div class="section-hero__image-box">
-        <img class="section-hero__image" src="<?= get_theme_file_uri('/images/hero-banner.webp') ?>" alt="">
+        <img class="section-hero__image" data-aos="fade-up-left" src="<?= get_theme_file_uri('/images/hero-banner.webp') ?>" alt="">
     </div>
 </section>
 
+
 <section id="skills" class="section-skills">
-    <h1 class="display-text text-center margin-bottom-lg">My <span class="text-xbold">Skills</span></h1>
+    <h1 class="display-text text-center margin-bottom-lg" data-aos="zoom-in">My <span class="text-xbold">Skills</span></h1>
 
     <div class="section-skills__content-box">
 
@@ -56,7 +57,7 @@
             $svg = get_field('svg_image');
             $skillImage = $svg ? get_attached_file($svg['ID']) : null;
         ?>
-            <div class="skill-card__item">
+            <div class="skill-card__item ">
                 <?php if ($skillImage && file_exists($skillImage)): ?>
                     <?= file_get_contents($skillImage) ?>
                 <?php else: ?>
@@ -73,7 +74,7 @@
 
 <section id="experience" class="section-exp">
     <div class="section-exp__content-box">
-        <h1 class="display-text text-center margin-bottom-md">My <span class="text-xbold">Experience</span></h1>
+        <h1 class="display-text text-center margin-bottom-md" data-aos="zoom-in">My <span class="text-xbold">Experience</span></h1>
 
         <?php
         $today = date('Ymd');
@@ -136,20 +137,20 @@
 
 <section id="about" class="section-about">
     <div class="section-about__image-box">
-        <img class="section-about__img" src="<?= get_theme_file_uri('/images/about-img.webp') ?>" alt="About image">
+        <img class="section-about__img" data-aos="fade-down-right" src="<?= get_theme_file_uri('/images/about-img.webp') ?>" alt="About image">
     </div>
 
     <div class="section-about__content-box">
-        <h1 class="section-about__headline display-text margin-bottom-md">About <span class="text-xbold">Me</span></h1>
+        <h1 class="section-about__headline display-text margin-bottom-md" data-aos="fade-right" data-aos-delay="100">About <span class="text-xbold">Me</span></h1>
         <div class="section-about__content paragraph--2 ">
-            <p>
+            <p data-aos="fade-right" data-aos-delay="200">
                 Hi, I'm Mark Nim, a WordPress developer based in the Philippines. I specialize in building custom WordPress themes with a strong focus on clean code, responsive design, and user-friendly interfaces.
             </p>
-            <p>
+            <p data-aos="fade-right" data-aos-delay="300">
                 With 1 year and 6 months of hands-on experience, I’ve worked on various WordPress projects, from e-commerce sites using WooCommerce, to dynamic websites powered by Elementor and Advanced Custom Fields (ACF). My skill set includes HTML, CSS, SASS, JavaScript, and PHP, which I use to bring unique and functional designs to life.
             </p>
 
-            <p>
+            <p data-aos="fade-right" data-aos-delay="400">
                 Whether it's developing from scratch or enhancing existing websites, I’m passionate about crafting tailored solutions that align with each client's goals.
             </p>
         </div>
@@ -160,7 +161,7 @@
 
 <section id="projects" class="section-projects">
     <div class="section-projects__content-box">
-        <h1 class="display-text text-center text-white margin-bottom-md">My <span class="text-xbold">Projects</span></h1>
+        <h1 class="display-text text-center text-white margin-bottom-md" data-aos="zoom-in">My <span class="text-xbold">Projects</span></h1>
 
         <?php
         $homePageProject = new WP_Query(array(
@@ -182,14 +183,20 @@
                 <div class="section-projects__item--img-box">
                     <?php
                     if ($projectImage) { ?>
-                        <img src="<?= esc_url($projectImage['url']); ?>" alt="">
+                        <a href="<?= esc_url(get_field('project_url')) ?>" target="_blank" rel="noopener">
+                            <img src="<?= esc_url($projectImage['url']); ?>" alt="">
+                        </a>
                     <?php
                     }
                     ?>
                 </div>
                 <div class="section-projects__item--content text-white">
                     <h1 class="display-text text-xbold"><?= $projectNum ?></h1>
-                    <h2 class="heading-2 text-bold"><?= the_title() ?></h2>
+                    <h2 class="heading-2 text-bold">
+                        <a class="link" href="<?= esc_url(get_field('project_url')) ?>" target="_blank" rel="noopener">
+                            <?= the_title() ?>
+                        </a>
+                    </h2>
                     <div class="paragraph--2 font-color__zinc-500 text-justify">
                         <?= $projectDesc ?>
                     </div>
@@ -213,20 +220,20 @@
 
 
 <section id="contact-me" class="section-form">
-    <div class="section-form__box">
+    <div class="section-form__box" data-aos="fade-down-right">
         <?= do_shortcode('[contact-form-7 id="b53bf16" title="Home Page Contact Form"]'); ?>
     </div>
     <div class="section-form__content-box">
-        <h1 class="display-text text-xbold">
+        <h1 class="display-text text-xbold" data-aos="fade-right" data-aos-delay="200">
             Let's <span class="display-text--outlined">talk</span>
             for<br>Something special
         </h1>
 
-        <p class="paragraph--2">Have a project in mind or need help with your WordPress site? I’d love to hear from you! Feel free to reach out and I’ll get back to you as soon as possible.</p>
+        <p class="paragraph--2" data-aos="fade-right" data-aos-delay="300">Have a project in mind or need help with your WordPress site? I’d love to hear from you! Feel free to reach out and I’ll get back to you as soon as possible.</p>
 
         <h3 class="heading-3 heading-3--sbold">
-            <span class="section-form__email">nimmark98@gmail.com</span>
-            <span class="section-form__number">+639265443721</span>
+            <span class="section-form__email" data-aos="fade-right" data-aos-delay="400">nimmark98@gmail.com</span>
+            <span class="section-form__number" data-aos="fade-right" data-aos-delay="500">+639265443721</span>
         </h3>
     </div>
 </section>
