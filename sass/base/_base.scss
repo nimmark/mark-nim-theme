@@ -10,6 +10,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 
   @include respond(laptop) {
     font-size: 56.25%;
@@ -22,25 +23,28 @@ html {
 
 body {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .grid-container {
   display: grid;
   grid-template-rows: repeat(8, min-content);
   grid-template-columns:
-    [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14.25rem) [col-end]) [center-end] minmax(
-      6rem,
-      1fr
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14.25rem) [col-end]
     )
+    [center-end] minmax(6rem, 1fr)
     [full-end];
 
   @include respond(tablet-md) {
     grid-template-rows: repeat(8, min-content);
     grid-template-columns:
-      [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(
-        2rem,
-        1fr
+      [full-start] minmax(2rem, 1fr) [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 14rem) [col-end]
       )
+      [center-end] minmax(2rem, 1fr)
       [full-end];
   }
 }
