@@ -63,7 +63,7 @@
                 <?php else: ?>
                     <p>svg not found</p>
                 <?php endif; ?>
-                <h5 class="heading-5 font-bold text-center"><?= the_title(); ?></h5>
+                <h5 class="heading-5 font-bold text-center break-word"><?= the_title(); ?></h5>
             </div>
         <?php
         }

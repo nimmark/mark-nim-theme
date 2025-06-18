@@ -15,12 +15,22 @@
       @content;
     }
   } @else if $breakpoints == mobile-pt {
-    /* Mobile portrait (min 374px up to 575px) */
-    @media only screen and (min-width: 23.4375em) and (max-width: 35.9375em) {
+    /* Mobile portrait (max width 575px) */
+    @media only screen and (max-width: 35.9375em) {
+      @content;
+    }
+  } @else if $breakpoints == mobile-lg {
+    /* Mobile large (max width 425px) */
+    @media only screen and (max-width: 26.5625em) {
+      @content;
+    }
+  } @else if $breakpoints == mobile-md {
+    /* Mobile medium (max width 375px) */
+    @media only screen and (max-width: 23.4375em) {
       @content;
     }
   } @else if $breakpoints == mobile-sm {
-    @media only screen and (max-width: 23.375em) {
+    @media only screen and (max-width: 20em) {
       @content;
     }
   }

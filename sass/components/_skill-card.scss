@@ -10,8 +10,7 @@
     max-width: 25rem;
     min-width: 100%;
     min-height: 18rem;
-    // min-width: 20rem;
-    // min-height: 20rem;
+
     padding: 1rem;
     gap: 1.5rem;
     transition:
@@ -38,40 +37,8 @@
       color: $color-primary-white;
     }
 
-    // &:nth-child(2) {
-    //   transition-delay: 200ms;
-    // }
-
-    // &:nth-child(3) {
-    //   transition-delay: 400ms;
-    // }
-
-    // &:nth-child(4) {
-    //   transition-delay: 600ms;
-    // }
-
-    // &:nth-child(5) {
-    //   transition-delay: 800ms;
-    // }
-
-    // &:nth-child(6) {
-    //   transition-delay: 1000ms;
-    // }
-
-    // &:nth-child(7) {
-    //   transition-delay: 1200ms;
-    // }
-
-    // &:nth-child(8) {
-    //   transition-delay: 1400ms;
-    // }
-
-    // &:nth-child(9) {
-    //   transition-delay: 1600ms;
-    // }
-
-    // &:nth-child(10) {
-    //   transition-delay: 1800ms;
-    // }
+    @include respond(mobile-sm) {
+      min-height: 15rem;
+    }
   }
 }

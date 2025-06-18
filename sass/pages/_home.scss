@@ -4,8 +4,9 @@
   grid-column: center-start / center-end;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  place-items: center;
+  padding-top: 4rem;
   min-height: 85vh;
+  place-items: center;
 
   @include respond(mobile-lc) {
     grid-template-columns: 1fr;
@@ -92,13 +93,14 @@
 
   &__content-box {
     display: grid;
-    column-gap: 2rem;
-    row-gap: 2rem;
+    gap: 2rem 2rem;
+
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     justify-items: center;
 
-    @include respond(mobile-pt) {
+    @include respond(mobile-md) {
       grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      gap: 1rem 1rem;
     }
   }
 }
